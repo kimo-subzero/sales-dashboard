@@ -1,20 +1,6 @@
 'use client';
 
 import React from 'react';
-import { 
-  TrendingUp, 
-  DollarSign, 
-  Users, 
-  ShoppingCart, 
-  ArrowUpRight, 
-  ArrowDownRight, 
-  Search, 
-  Bell, 
-  Settings, 
-  BarChart3, 
-  Package, 
-  RefreshCw 
-} from 'lucide-react';
 
 export default function SalesDashboard() {
   return (
@@ -24,8 +10,8 @@ export default function SalesDashboard() {
       <aside className="w-64 border-r border-slate-800 bg-slate-900/50 hidden md:flex flex-col justify-between p-6">
         <div>
           <div className="flex items-center gap-3 mb-10">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/30">
-              <BarChart3 className="w-5 h-5 text-white" />
+            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/30 font-bold text-white">
+              A
             </div>
             <span className="font-bold text-lg tracking-wide bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">
               ApexAnalytics
@@ -34,16 +20,16 @@ export default function SalesDashboard() {
 
           <nav className="space-y-1">
             <a href="#" className="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-indigo-600/10 text-indigo-400 font-medium text-sm border border-indigo-500/20">
-              <BarChart3 className="w-4 h-4" /> Dashboard
+              📊 Dashboard
             </a>
             <a href="#" className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition text-sm">
-              <ShoppingCart className="w-4 h-4" /> Sales & Orders
+              🛒 Sales & Orders
             </a>
             <a href="#" className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition text-sm">
-              <Users className="w-4 h-4" /> Customers
+              👥 Customers
             </a>
             <a href="#" className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition text-sm">
-              <Package className="w-4 h-4" /> Products
+              📦 Products
             </a>
           </nav>
         </div>
@@ -66,23 +52,22 @@ export default function SalesDashboard() {
         <header className="h-20 border-b border-slate-800 px-8 flex items-center justify-between bg-slate-900/30 backdrop-blur-md sticky top-0 z-10">
           <div className="flex items-center gap-4 w-96">
             <div className="relative w-full">
-              <Search className="w-4 h-4 text-slate-500 absolute left-3.5 top-3" />
               <input 
                 type="text" 
                 placeholder="Search analytics, orders, products..." 
-                className="w-full bg-slate-900 border border-slate-800 rounded-xl pl-10 pr-4 py-2 text-sm text-slate-200 placeholder:text-slate-500 focus:outline-none focus:border-indigo-500 transition"
+                className="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2 text-sm text-slate-200 placeholder:text-slate-500 focus:outline-none focus:border-indigo-500 transition"
               />
             </div>
           </div>
 
           <div className="flex items-center gap-4">
-            <button className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-slate-200 transition relative">
-              <Bell className="w-4 h-4" />
+            <div className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 relative">
+              🔔
               <span className="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-indigo-500"></span>
-            </button>
+            </div>
             <div className="h-8 w-[1px] bg-slate-800"></div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-violet-600 to-indigo-600 flex items-center justify-center font-bold text-sm shadow-md">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-violet-600 to-indigo-600 flex items-center justify-center font-bold text-sm shadow-md text-white">
                 KS
               </div>
               <div className="hidden sm:block">
@@ -104,7 +89,7 @@ export default function SalesDashboard() {
             </div>
             <div className="flex items-center gap-3">
               <button className="flex items-center gap-2 bg-slate-900 border border-slate-800 hover:bg-slate-800 text-slate-300 px-4 py-2 rounded-xl text-sm font-medium transition">
-                <RefreshCw className="w-3.5 h-3.5" /> Sync Data
+                🔄 Sync Data
               </button>
               <button className="bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-xl text-sm font-medium shadow-lg shadow-indigo-600/20 transition">
                 Export Report
@@ -118,15 +103,14 @@ export default function SalesDashboard() {
             <div className="bg-slate-900/60 border border-slate-800/80 rounded-2xl p-6 relative overflow-hidden">
               <div className="flex items-center justify-between">
                 <span className="text-sm font-medium text-slate-400">Total Revenue</span>
-                <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
-                  <DollarSign className="w-5 h-5" />
+                <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold">
+                  $
                 </div>
               </div>
               <div className="mt-4">
                 <h3 className="text-2xl font-bold text-white">$84,245.50</h3>
                 <div className="flex items-center gap-1.5 mt-2 text-emerald-400 text-xs font-semibold">
-                  <ArrowUpRight className="w-4 h-4" />
-                  <span>+12.4% from last month</span>
+                  <span>📈 +12.4% from last month</span>
                 </div>
               </div>
             </div>
@@ -135,14 +119,13 @@ export default function SalesDashboard() {
               <div className="flex items-center justify-between">
                 <span className="text-sm font-medium text-slate-400">Active Customers</span>
                 <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
-                  <Users className="w-5 h-5" />
+                  👥
                 </div>
               </div>
               <div className="mt-4">
                 <h3 className="text-2xl font-bold text-white">2,420</h3>
                 <div className="flex items-center gap-1.5 mt-2 text-emerald-400 text-xs font-semibold">
-                  <ArrowUpRight className="w-4 h-4" />
-                  <span>+8.1% new signups</span>
+                  <span>📈 +8.1% new signups</span>
                 </div>
               </div>
             </div>
@@ -151,14 +134,13 @@ export default function SalesDashboard() {
               <div className="flex items-center justify-between">
                 <span className="text-sm font-medium text-slate-400">Total Orders</span>
                 <div className="w-10 h-10 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center text-violet-400">
-                  <ShoppingCart className="w-5 h-5" />
+                  🛒
                 </div>
               </div>
               <div className="mt-4">
                 <h3 className="text-2xl font-bold text-white">1,389</h3>
                 <div className="flex items-center gap-1.5 mt-2 text-rose-400 text-xs font-semibold">
-                  <ArrowDownRight className="w-4 h-4" />
-                  <span>-2.3% vs yesterday</span>
+                  <span>📉 -2.3% vs yesterday</span>
                 </div>
               </div>
             </div>
@@ -167,14 +149,13 @@ export default function SalesDashboard() {
               <div className="flex items-center justify-between">
                 <span className="text-sm font-medium text-slate-400">Conversion Rate</span>
                 <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
-                  <TrendingUp className="w-5 h-5" />
+                  ⚡
                 </div>
               </div>
               <div className="mt-4">
                 <h3 className="text-2xl font-bold text-white">4.82%</h3>
                 <div className="flex items-center gap-1.5 mt-2 text-emerald-400 text-xs font-semibold">
-                  <ArrowUpRight className="w-4 h-4" />
-                  <span>+0.6% optimization</span>
+                  <span>📈 +0.6% optimization</span>
                 </div>
               </div>
             </div>
@@ -211,7 +192,7 @@ export default function SalesDashboard() {
 
               <div className="flex items-center justify-between pt-4 text-xs text-slate-400">
                 <span>Target: $100k / mo</span>
-                <span className="text-indigo-400 font-medium">Updated 5m ago</span>
+                <span className="text-indigo-400 font-medium">Updated just now</span>
               </div>
             </div>
 
