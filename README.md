@@ -5,7 +5,7 @@ A modern, production-ready, interactive Sales & Analytics Dashboard built with *
 ![Dashboard Preview](https://img.shields.io/badge/Status-Live-emerald) ![Next.js](https://img.shields.io/badge/Next.js-15.1.0-black) ![TailwindCSS](https://img.shields.io/badge/Tailwind-3.4.1-blue)
 
 ## 🚀 Live Demo
-🔗 **[View Live Dashboard](https://your-vercel-project-url.vercel.app)** 
+🔗 **[View Live Dashboard](https://sales-dashboard-lzkw.vercel.app/#)** 
 
 ## ✨ Key Features
 - **Interactive Revenue Charts**: Powered by `Recharts` with responsive hover metrics and smooth transitions.
